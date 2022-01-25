@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.32002.261
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WorkListGenerator", "WorkListGenerator\WorkListGenerator.csproj", "{800FCF1B-98F1-4371-BA5D-4FB9AB26D267}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WorkListGenerator.Test", "WorkListGenerator.Test\WorkListGenerator.Test.csproj", "{7617C81E-7168-4F85-A815-D4AAB6133EB4}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{800FCF1B-98F1-4371-BA5D-4FB9AB26D267}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{800FCF1B-98F1-4371-BA5D-4FB9AB26D267}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{800FCF1B-98F1-4371-BA5D-4FB9AB26D267}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{800FCF1B-98F1-4371-BA5D-4FB9AB26D267}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7617C81E-7168-4F85-A815-D4AAB6133EB4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7617C81E-7168-4F85-A815-D4AAB6133EB4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7617C81E-7168-4F85-A815-D4AAB6133EB4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7617C81E-7168-4F85-A815-D4AAB6133EB4}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {2D619C88-1AC0-4E38-9F3B-6D52E9E5BDE9}
+	EndGlobalSection
+EndGlobal
