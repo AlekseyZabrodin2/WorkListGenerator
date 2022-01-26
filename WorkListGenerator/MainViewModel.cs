@@ -63,13 +63,13 @@ namespace WorkListGenerator
                 myConnection.Open();
 
                 UpdateText = $"DB connect";
-                
+
             }
             catch (Exception e)
             {
                 UpdateText = "DB not connect";
             }
-            
+
 
         }
 
@@ -81,8 +81,8 @@ namespace WorkListGenerator
             try
             {
                 //var scriptRequest = "INSERT INTO `worklistgenerator`.`worklisttest` (`Id`, `LastName`, `Name`) VALUES ('7', 'Michal2', 'John');";
-                
-                var scriptRequest = "SELECT LastName FROM worklisttest WHERE Name='John' AND Id=4";
+
+                var scriptRequest = "SELECT LastName FROM worklisttest";
                 myConnection = new MySqlConnection(connect);
 
                 myConnection.Open();
@@ -104,14 +104,14 @@ namespace WorkListGenerator
                     UpdateText = reader[0].ToString();
                 }
 
-               reader.Close();
-                
+                reader.Close();
+
 
                 //SD.DataTable table = new DataTable();
                 //msData.Fill(table);
 
                 //UpdateText = $"{msData}";
-              
+
 
 
 
@@ -124,7 +124,7 @@ namespace WorkListGenerator
             {
                 UpdateText = "Patient in Base";
             }
-            
+
         }
     }
 }

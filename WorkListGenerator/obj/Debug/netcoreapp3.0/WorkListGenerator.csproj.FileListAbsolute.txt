@@ -36,3 +36,6 @@ D:\Develop\WorkListGenerator\WorkListGenerator\WorkListGenerator\obj\Debug\netco
 D:\Develop\WorkListGenerator\WorkListGenerator\WorkListGenerator\obj\Debug\netcoreapp3.0\WorkListGenerator.genruntimeconfig.cache
 D:\Develop\WorkListGenerator\WorkListGenerator\WorkListGenerator\bin\Debug\netcoreapp3.0\MySqlConnector.dll
 D:\Develop\WorkListGenerator\WorkListGenerator\WorkListGenerator\bin\Debug\netcoreapp3.0\Pomelo.EntityFrameworkCore.MySql.dll
+D:\Develop\WorkListGenerator\WorkListGenerator\WorkListGenerator\bin\Debug\netcoreapp3.0\Prism.Unity.Wpf.dll
+D:\Develop\WorkListGenerator\WorkListGenerator\WorkListGenerator\bin\Debug\netcoreapp3.0\Prism.Wpf.dll
+D:\Develop\WorkListGenerator\WorkListGenerator\WorkListGenerator\bin\Debug\netcoreapp3.0\Prism.dll

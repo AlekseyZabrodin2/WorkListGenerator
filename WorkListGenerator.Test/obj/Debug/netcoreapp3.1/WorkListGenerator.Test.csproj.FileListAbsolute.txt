@@ -119,3 +119,9 @@ D:\Develop\WorkListGenerator\WorkListGenerator\WorkListGenerator.Test\bin\Debug\
 D:\Develop\WorkListGenerator\WorkListGenerator\WorkListGenerator.Test\bin\Debug\netcoreapp3.1\WorkListGenerator.pdb
 D:\Develop\WorkListGenerator\WorkListGenerator\WorkListGenerator.Test\bin\Debug\netcoreapp3.1\MySqlConnector.dll
 D:\Develop\WorkListGenerator\WorkListGenerator\WorkListGenerator.Test\bin\Debug\netcoreapp3.1\Pomelo.EntityFrameworkCore.MySql.dll
+D:\Develop\WorkListGenerator\WorkListGenerator\WorkListGenerator.Test\bin\Debug\netcoreapp3.1\Prism.Unity.Wpf.dll
+D:\Develop\WorkListGenerator\WorkListGenerator\WorkListGenerator.Test\bin\Debug\netcoreapp3.1\Prism.Wpf.dll
+D:\Develop\WorkListGenerator\WorkListGenerator\WorkListGenerator.Test\bin\Debug\netcoreapp3.1\Microsoft.Xaml.Behaviors.dll
+D:\Develop\WorkListGenerator\WorkListGenerator\WorkListGenerator.Test\bin\Debug\netcoreapp3.1\Prism.dll
+D:\Develop\WorkListGenerator\WorkListGenerator\WorkListGenerator.Test\bin\Debug\netcoreapp3.1\Unity.Abstractions.dll
+D:\Develop\WorkListGenerator\WorkListGenerator\WorkListGenerator.Test\bin\Debug\netcoreapp3.1\Unity.Container.dll

@@ -8,7 +8,10 @@
     ".NETCoreApp,Version=v3.0": {
       "WorkListGenerator/1.0.0": {
         "dependencies": {
-          "Pomelo.EntityFrameworkCore.MySql": "5.0.4"
+          "Pomelo.EntityFrameworkCore.MySql": "5.0.4",
+          "Prism.Core": "8.0.0.1909",
+          "Prism.Unity": "8.0.0.1909",
+          "Prism.Wpf": "8.0.0.1909"
         },
         "runtime": {
           "WorkListGenerator.dll": {}
@@ -173,6 +176,30 @@
           }
         }
       },
+      "Prism.Core/8.0.0.1909": {
+        "runtime": {
+          "lib/netstandard2.0/Prism.dll": {
+            "assemblyVersion": "8.0.0.1909",
+            "fileVersion": "8.0.0.1909"
+          }
+        }
+      },
+      "Prism.Unity/8.0.0.1909": {
+        "runtime": {
+          "lib/net461/Prism.Unity.Wpf.dll": {
+            "assemblyVersion": "8.0.0.1909",
+            "fileVersion": "8.0.0.1909"
+          }
+        }
+      },
+      "Prism.Wpf/8.0.0.1909": {
+        "runtime": {
+          "lib/net461/Prism.Wpf.dll": {
+            "assemblyVersion": "8.0.0.1909",
+            "fileVersion": "8.0.0.1909"
+          }
+        }
+      },
       "System.Collections.Immutable/5.0.0": {
         "runtime": {
           "lib/netstandard2.0/System.Collections.Immutable.dll": {
@@ -309,6 +336,27 @@
       "sha512": "sha512-R5LDFDaCO/Si09tEWbgQoYwLsCYPG3Qm6Q7zICFDF8zZ7gr64fgyBLBtOxhGtJBmbpImFVI6GfcYf2JAROGaZA==",
       "path": "pomelo.entityframeworkcore.mysql/5.0.4",
       "hashPath": "pomelo.entityframeworkcore.mysql.5.0.4.nupkg.sha512"
+    },
+    "Prism.Core/8.0.0.1909": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-Ri+iSFvJiSKYdui7qtxi3uH9NImSZ8Jl/nOosxScSJseFwAc8Lz63JLXoqSAQglcX13DzZcAMzpKNuA9rCFiJg==",
+      "path": "prism.core/8.0.0.1909",
+      "hashPath": "prism.core.8.0.0.1909.nupkg.sha512"
+    },
+    "Prism.Unity/8.0.0.1909": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-5WO7gvzQUkqxhJi0Ff+aCv3SSn0H4Eigk/yn4HPnNrQFoHzQJ5L1dtvyBcBP3zxrH/C3XXCfbl/4gikMVd/0MA==",
+      "path": "prism.unity/8.0.0.1909",
+      "hashPath": "prism.unity.8.0.0.1909.nupkg.sha512"
+    },
+    "Prism.Wpf/8.0.0.1909": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-RAIMvKo/CMcyHqFKXuHk4sU3HpdZgzf3xh885VJQ3HzgY5g4NtRdZalvQr87tmJ8ptMY/e5PSZhiJ9RTcuXPpQ==",
+      "path": "prism.wpf/8.0.0.1909",
+      "hashPath": "prism.wpf.8.0.0.1909.nupkg.sha512"
     },
     "System.Collections.Immutable/5.0.0": {
       "type": "package",
