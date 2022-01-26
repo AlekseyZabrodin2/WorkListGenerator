@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Develop\\WorkListGenerator\\WorkListGenerator\\WorkListGenerator\\WorkListGenerator.csproj": {}
+    "D:\\Develop\\WorkListGenerator\\WorkListGenerator\\WorkListGenerator.csproj": {}
   },
   "projects": {
-    "D:\\Develop\\WorkListGenerator\\WorkListGenerator\\WorkListGenerator\\WorkListGenerator.csproj": {
+    "D:\\Develop\\WorkListGenerator\\WorkListGenerator\\WorkListGenerator.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Develop\\WorkListGenerator\\WorkListGenerator\\WorkListGenerator\\WorkListGenerator.csproj",
+        "projectUniqueName": "D:\\Develop\\WorkListGenerator\\WorkListGenerator\\WorkListGenerator.csproj",
         "projectName": "WorkListGenerator",
-        "projectPath": "D:\\Develop\\WorkListGenerator\\WorkListGenerator\\WorkListGenerator\\WorkListGenerator.csproj",
-        "packagesPath": "C:\\Users\\Забродин Алексей\\.nuget\\packages\\",
-        "outputPath": "D:\\Develop\\WorkListGenerator\\WorkListGenerator\\WorkListGenerator\\obj\\",
+        "projectPath": "D:\\Develop\\WorkListGenerator\\WorkListGenerator\\WorkListGenerator.csproj",
+        "packagesPath": "C:\\Users\\zabrodin\\.nuget\\packages\\",
+        "outputPath": "D:\\Develop\\WorkListGenerator\\WorkListGenerator\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Забродин Алексей\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\zabrodin\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -41,9 +41,31 @@
         "netcoreapp3.0": {
           "targetAlias": "netcoreapp3.0",
           "dependencies": {
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[5.0.13, )"
+            },
+            "MySql.Data": {
+              "target": "Package",
+              "version": "[8.0.28, )"
+            },
             "Pomelo.EntityFrameworkCore.MySql": {
               "target": "Package",
               "version": "[5.0.4, )"
+            },
+            "Prism.Core": {
+              "target": "Package",
+              "version": "[8.1.97, )"
+            },
+            "Prism.Unity": {
+              "target": "Package",
+              "version": "[8.1.97, )"
+            },
+            "Prism.Wpf": {
+              "target": "Package",
+              "version": "[8.1.97, )"
             }
           },
           "imports": [

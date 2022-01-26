@@ -1,8 +1,8 @@
 {
   "runtimeOptions": {
     "additionalProbingPaths": [
-      "C:\\Users\\Забродин Алексей\\.dotnet\\store\\|arch|\\|tfm|",
-      "C:\\Users\\Забродин Алексей\\.nuget\\packages"
+      "C:\\Users\\zabrodin\\.dotnet\\store\\|arch|\\|tfm|",
+      "C:\\Users\\zabrodin\\.nuget\\packages"
     ]
   }
 }
