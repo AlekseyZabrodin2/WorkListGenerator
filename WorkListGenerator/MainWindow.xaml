@@ -62,12 +62,12 @@
         <Grid Grid.Row="2"
               Grid.Column="1">
 
-            <Button Name="Request"
+            <Button Name="Select"
                     Width="150"
                     Height="50"
                     HorizontalAlignment="Center"
                     Content="Request"
-                    Command="{Binding Request}">
+                    Command="{Binding SelectDb}">
             </Button>
 
         </Grid>

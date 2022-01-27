@@ -9,10 +9,13 @@ using System.Windows.Data;
 using System.Windows.Input;
 using System.Windows.Media.Animation;
 using MySqlConnector;
+using Pomelo.EntityFrameworkCore.MySql.Storage.Internal;
 using SD=System.Data;
 using Prism.Mvvm;
 using WorkListGenerator.Model;
 using WorkListGenerator.Model.Data;
+using Microsoft.EntityFrameworkCore;
+using Pomelo.EntityFrameworkCore.MySql.Infrastructure;
 
 namespace WorkListGenerator
 {
@@ -25,20 +28,37 @@ namespace WorkListGenerator
         }
 
 
-
         public MySqlConnection myConnection;
-        public MySqlCommand MySqlCommand;
+        public MySqlCommand mySqlCommand;
+        public MySqlDataReader dataReader;
         private MySqlDataAdapter adapter;
         private DataTable tablet;
         public string connect = "Server=localhost;DataBase=worklistgenerator;Uid=root;pwd=root;";
-        //public string connect = "Server=localhost;DataBase=worklistgenerator;Uid=root;pwd=root;";
         public SD.DataSet dataSet;
         private string _updateText;
+        
+
+        //почитать про Pomelo
+        public class WorkListDataBase : DbContext
+        {
+            protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
+            {
+                optionsBuilder.UseMySql(connectionString: @"server=localhost;database=BookStoreDb2;uid=root;password=;",
+                    new MySqlServerVersion(new Version(10, 4, 17)));
+            }
+
+            public DbSet<WorkList> WorkLists { get; set; }
+            
+        }
+
+      
 
 
 
 
-        public string UpdateText
+
+
+public string UpdateText
         {
             get
             {
@@ -73,8 +93,10 @@ namespace WorkListGenerator
 
         }
 
-        private DelegateCommand request;
-        public ICommand Request => request = new DelegateCommand(PerformRequest);
+       
+        
+        private DelegateCommand selectDb;
+        public ICommand SelectDb => selectDb = new DelegateCommand(PerformRequest);
 
         private void PerformRequest()
         {
@@ -82,37 +104,41 @@ namespace WorkListGenerator
             {
                 //var scriptRequest = "INSERT INTO `worklistgenerator`.`worklisttest` (`Id`, `LastName`, `Name`) VALUES ('7', 'Michal2', 'John');";
                 
-                var scriptRequest = "SELECT LastName FROM worklisttest WHERE Name='John' AND Id=4";
+               // var scriptSelect = "INSERT INTO `worklisttest` (`Id`, `LastName`, `Name`) VALUES ('12', 'Kortyn', 'Kurtara');";
                 myConnection = new MySqlConnection(connect);
 
                 myConnection.Open();
 
                 //adapter = new MySqlDataAdapter(scriptRequest, connect);
 
-                MySqlCommand command = new MySqlCommand(scriptRequest, myConnection);
+                WorkList work = new WorkList {Id = 35, LastName = "Grinch", Name = "Jora"};
+                
+                adapter = new MySqlDataAdapter( );
 
-                MySqlDataReader reader = command.ExecuteReader();
+                
+               
+                mySqlCommand = new MySqlCommand("INSERT INTO `worklisttest` (`Id`, `LastName`, `Name`) VALUES ('20', 'Kortyn', 'Kurtara'),('21', 'Kortyn', 'Kurtara')", myConnection);
+
+                dataReader = mySqlCommand.ExecuteReader();
 
                 //tablet = new DataTable();
 
                 //adapter.Fill(tablet);
 
-                ////string result = command.ExecuteScalar().ToString();
+                ////string result = command.ExecuteScalar().ToString(); 
 
-                while (reader.Read())
+                while (dataReader.Read())
                 {
-                    UpdateText = reader[0].ToString();
+                    UpdateText = dataReader[0].ToString();
                 }
 
-               reader.Close();
-                
+               dataReader.Close();
+
 
                 //SD.DataTable table = new DataTable();
                 //msData.Fill(table);
 
                 //UpdateText = $"{msData}";
-              
-
 
 
                 myConnection.Close();
