@@ -15,10 +15,10 @@ namespace WorkListGenerator.Model.Data
             Database.EnsureCreated();
         }
 
-        protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
-        {
-            optionsBuilder.UseMySql("server = localhost; user = root; password = root; database = WorkList;", new MySqlServerVersion(new Version(8,0,28)));
-        }
+        //protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
+        //{
+        //    optionsBuilder.UseMySql("server = localhost; user = root; password = root; database = WorkList;", new MySqlServerVersion(new Version(8,0,28)));
+        //}
     }
 
    
